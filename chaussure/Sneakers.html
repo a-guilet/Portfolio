@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+<!--java pour le css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+<body>
+    <!--Barre de Navigaton du site au sites  -->
+    <section id="Accueil" >
+        <header id="header" class="header">
+            <img src="images/Logo_Site_Web.png"class="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                    <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+                    <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+                    <form> <input type="search" placeholder="Rechercher"></form>
+                    <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+                    <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+        </header>
+    </section>
+<!--FIN de Barre de Navigaton du site au sites -->
+<!--Page Principal -->  
+ <!--Section de présatation de produit en Nos meilleurs ventes-->  
+ <section id="NosProduits" class="NosProduits-container">
+    <h1 class="section-title">Nos meilleures ventes</h1>
+    <div class="NosProduits">
+        <a href="Airforce.html" class="Etiquette dimension NikeAirforce">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike Air Force 1 '07</h1>
+                <h3 class="Chaussure-price">109 €</h3>
+            </div>
+        </a>
+        <a href="Mid.html" class="Etiquette dimension JordanMid">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Air Jordan 1 Mid</h1>
+                <h3 class="Chaussure-price">129 €</h3>
+            </div>
+        </a>
+        <a href="Airmax.html" class="Etiquette dimension Nike95">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike Air Max 95</h1>
+                <h3 class="Chaussure-price">179 €</h3>
+            </div>
+        </a>
+        <a href="Tn.html" class="Etiquette dimension NikeTN">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike Air Max Plus</h1>
+                <h3 class="Chaussure-price">179 €</h3>
+            </div>
+        </a>
+    </div>
+</section>
+<!--Fin de Section de présatation de produit en Nos meilleurs ventes-->  
+<!--Fin Page Principal -->  
+<!--Footer de la page -->  
+<footer id="footer" class="footer">
+    <span class="copyrights">&copy; 2021 - Guilet Arthur </span>
+    <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+    <div class="reseaux-sociaux">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+    <a href="#" class="conditions">Condition générales du site</a>
+</footer>
+
+<!--Page responsive script -->  
+<script>
+    const burgerContainer = document.querySelector('.burger-container');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerContainer.addEventListener('click', () => {
+        burgerContainer.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    })
+</script>
+</body>
+
+</html>

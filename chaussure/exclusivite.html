@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+<!--java pour le css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+<body>
+    <!--Barre de Navigaton du site au sites  -->
+    <section id="Accueil">
+        <header id="header" class="header" >
+            <img src="images/Logo_Site_Web.png"class="logo">
+                <ul class="nav-links" >
+                    <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                    <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+                    <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+                    <form> <input type="search" placeholder="Rechercher"></form>
+                    <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+                    <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+        </header>
+    </section>
+<!--FIN de Barre de Navigaton du site au sites -->
+<!--Page Principal -->   
+<!--Section de présatation de produit en exclusivité-->  
+<section id="NosProduits" class="NosProduits-container">
+    <h1 class="section-title">Nos Exclusivités</h1>
+    <div class="NosProduits">
+        <a href="ProParis.html" class="Etiquette dimension NikeSample">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike SB Dunk Low Pro Paris</h1>
+                <h3 class="Chaussure-price">59 999 €</h3>
+            </div>
+        </a>
+        <a href="Propigeon.html" class="Etiquette dimension NikePigeon ">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike SB Dunk Low Pro NYC Pigeon</h1>
+                <h3 class="Chaussure-price">25 999 €</h3>
+            </div>
+        </a>
+        <a href="Bred.html" class="Etiquette dimension JordanBred">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike Air Jordan 1 High OG Bred</h1>
+                <h3 class="Chaussure-price">9 999 €</h3>
+            </div>
+        </a>
+        <a href="Family.html" class="Etiquette dimension NikeFamily">
+            <div class="Chaussure-bio">
+                <h1 class="Chaussure-name">Nike SB Dunk Low Friends And Family</h1>
+                <h3 class="Chaussure-price">2 999 €</h3>
+            </div>
+        </a>
+    </div>
+</section>
+<!--Fin de Section de présatation de produit en exclusivité--> 
+<!--Fin Page Principal -->  
+<!--Footer de la page -->  
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - Guilet Arthur </span>
+        <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+        <div class="reseaux-sociaux">
+          <p><i class="fab fa-facebook-f"></i></p>
+          <p><i class="fab fa-twitter"></i></p>
+          <p><i class="fab fa-instagram"></i></p>
+          <p><i class="fab fa-linkedin-in"></i></p>
+        </div>
+        <a href="#" class="conditions">Condition générales du site</a>
+    </footer>  
+<!--Page responsive script -->  
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

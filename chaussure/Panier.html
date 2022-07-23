@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+<!--java pour le css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+<body>
+    <!--Barre de Navigaton du site au sites  -->
+    <section id="Accueil">
+        <header id="header" class="header" >
+            <img src="images/Logo_Site_Web.png"class="logo">
+                <ul class="nav-links" >
+                    <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                    <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+                    <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+                    <form> <input type="search" placeholder="Rechercher"></form>
+                    <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+                    <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+        </header>
+    </section>
+<!--FIN de Barre de Navigaton du site au sites -->
+<!--Page Principal -->   
+<!--Section de présatation du panier--> 
+<section id="Panier" class="NosProduits-container">
+ <h1 class="section-title">Votre Panier</h1>     
+    <ul class="panier">
+        <img class=panier-img src="images/produits/Nike SB Dunk Low Pro Paris Sample/1.jpg" alt="">
+            <li><a class="">Nike SB Dunk Low Pro Paris</a>
+            <a class="star">
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i>
+                <i>&#9733;</i></a>
+            <a class="click"><strong>Mettre de côté</strong> </a>
+        
+        </li>
+
+
+            <li><a class="Stock">En stock</a>
+                <a class="">Livraison Gratuite</a>
+                <a class="click"><strong>Supprimer</strong> </a></li>
+        
+            <li>
+                <div class="container">
+                    <div class="select-box">
+                        <select>
+                            <option selected disabled>Qté</option>
+                            <option value="1">1 </option>       
+                            <option value="2">2 </option>       
+                            <option value="3">3 </option>       
+                            <option value="4">4 </option>       
+                            <option value="5">5</option>       
+                            <option value="6">6 </option>       
+                            <option value="7">7 </option>       
+                            <option value="8">8 </option>       
+                            <option value="9">9 </option>       
+                            <option value="10">10 </option>                
+                </select>
+            </div>
+                </div>
+            </li>
+
+
+            <li><a class="">Prix</a>
+                <a class="">59 999 €</a></li>
+
+       
+            
+    </ul> 
+
+    <ul class="prix">
+        <div class="segment">
+        </div>
+        <li><a class="">Prix : 59 999 €</a></li>
+        <li><a class="">Livraison : GRATUIT</a></li>
+        <div class="segment">
+        </div>
+        <li><a class="">Votre total : 59 999 €</a></li>
+
+        
+        <li><a href="commander.html"  class="commander">Valider la commande </a></li>
+       
+    </ul>
+ 
+</section>
+<!--Fin de Section de présatation de produit en exclusivité--> 
+<!--Fin Page Principal -->  
+<!--Footer de la page -->  
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - Guilet Arthur </span>
+        <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+        <div class="reseaux-sociaux">
+          <p><i class="fab fa-facebook-f"></i></p>
+          <p><i class="fab fa-twitter"></i></p>
+          <p><i class="fab fa-instagram"></i></p>
+          <p><i class="fab fa-linkedin-in"></i></p>
+        </div>
+        <a href="#" class="conditions">Condition générales du site</a>
+    </footer>  
+<!--Page responsive script -->  
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

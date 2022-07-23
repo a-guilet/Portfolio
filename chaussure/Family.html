@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <!--java pour le css -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+  <!--lien interne au sites  -->
+<body>
+    <script src="script/slider.js"></script>
+    
+    <section >
+        <header id="header" class="header">
+        <img src="images/Logo_Site_Web.png"class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+            <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+            <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+            <form> <input type="search" placeholder="Rechercher"></form>
+            <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+            <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+        </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+
+        </header>
+        
+        </div>
+   </section>
+   <section class="main">
+        
+        <ul class="info-chaussure">
+                <li><a class="test">Nike SB Dunk Low Friends And Family</a>
+                <a class="star">
+                    <i>&#9733;</i>
+                    <i>&#9733;</i>
+                    <i>&#9733;</i>
+                    <i>&#9733;</i>
+                    <i>&#9733;</i>
+                </a></li>
+
+                <li><a class="">2 999 €</a></li>
+            
+                <li>
+                    <div class="container">
+                        <div class="select-box">
+                            <select>
+                                <option selected disabled>Taille</option>
+                                <option value="1" >34 </option>       
+                                <option value="2">35 </option>       
+                                <option value="3">36 </option>       
+                                <option value="4">37 </option>       
+                                <option value="5">38</option>       
+                                <option value="6">39 </option>       
+                                <option value="7">40 </option>       
+                                <option value="8">41 </option>       
+                                <option value="9">42 </option>       
+                                <option value="10">43 </option>       
+                                <option value="11">44 </option>       
+                                <option value="12">45 </option>       
+                                <option value="13">46 </option>
+                                <option value="13">47 </option> 
+                                <option value="13">48 </option> 
+                                <option value="13">49 </option>          
+                            </select>
+                        </div>
+                    </div>
+                </li>
+        
+            
+            <li><a class="ajtpanier" href="Panier.html" ><strong>Acheter</strong> </a></li>
+      
+                <li><a class="Stock">En stock</a>
+                    <a class="">Livraison Gratuite</a></li>
+                
+        </ul>
+               
+  
+                    <div class="content">
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/1.jpg" alt="">
+                    <p>test</p>
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/2.jpg" alt="">
+                    <p>test1</p>
+                    
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/3.jpg" alt="">
+                
+                
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/4.jpg" alt="">
+                
+                
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/5.jpg" alt="">
+
+                        <img src="images/produits/Nike SB Dunk Low Friends And Family/6.jpg" alt="">
+                    </div>
+                
+    </section>
+
+<!--Fin Page Principal -->  
+<!--Footer de la page -->  
+<footer id="footer" class="footer">
+    <span class="copyrights">&copy; 2021 - Guilet Arthur </span>
+    <p>&copy; Contactez-nous au 06 98 87 82 00</p>
+    <div class="reseaux-sociaux">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+    <a href="#" class="conditions">Condition générales du site</a>
+</footer>
+
+
+
+<!--Page responsive script -->  
+<script>
+    const burgerContainer = document.querySelector('.burger-container');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerContainer.addEventListener('click', () => {
+        burgerContainer.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    })
+</script>
+</body>
+
+</html>

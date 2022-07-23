@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+<!--java pour le css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+<body>
+    <!--Barre de Navigaton du site au sites  -->
+    <section id="Accueil">
+        <header id="header" class="header" >
+            <img src="images/Logo_Site_Web.png"class="logo">
+                <ul class="nav-links" >
+                    <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                    <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+                    <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+                    <form> <input type="search" placeholder="Rechercher"></form>
+                    <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+                    <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+        </header>
+    </section>
+<!--FIN de Barre de Navigaton du site au sites -->
+<!--Page Principal -->   
+    <section class="Payer-container">
+        <div class="paiment">
+            <h1>Confirmer votre paiment</h1>
+            <div class="first-row">
+                <div class="owner">
+                    <h3>Nom du titulaire</h3>
+                    <div class="input-field">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="cvv">
+                    <h3>CVV</h3>
+                    <div class="input-field">
+                        <input type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="card-number">
+                    <h3>Numéro de carte</h3>
+                    <div class="input-field">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <h3>Date d'expiration</h3>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                          </select>
+                          <select name="years" id="years">
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                          </select>
+                    </div>
+                    <div class="cards">
+                        <img src="images/paiment/mc.png" alt="">
+                        <img src="images/paiment/vi.png" alt="">
+                        <img src="images/paiment/pp.png" alt="">
+                    </div>
+                </div>    
+            </div>
+            <div class="color">
+            <ul>
+            <li><a href="payer.html"  class="commander">Valider la commande </a></li>
+            </ul>
+            </div>
+        </div>
+    </section>

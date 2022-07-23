@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Ce code forme un paragraphe -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sneakers" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+<!--java pour le css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Site de sneaker Sneakfoot</title>
+</head>
+<body>
+    <!--Barre de Navigaton du site au sites  -->
+    <section id="Accueil">
+        <header id="header" class="header" >
+            <img src="images/Logo_Site_Web.png"class="logo">
+                <ul class="nav-links" >
+                    <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+                    <li><a href="exclusivite.html" data-text="Nos Exclusivités">Nos Exclusivités</a></li>
+                    <li><a href="Sneakers.html" data-text="Nos Sneakers">Nos Sneakers</a></li>
+                    <form> <input type="search" placeholder="Rechercher"></form>
+                    <li><a href="Panier.html"  data-text="Panier">Panier </a></li>
+                    <p><i class="fas fa-shopping-cart" href="Panier.html"></i></p>
+                </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+        </header>
+    </section>
+<!--FIN de Barre de Navigaton du site au sites -->
+<!--Page Principal -->   
+    <section class="warapper-container">
+        <div class="wrapper">
+            <h2>Inscription</h2>
+            <form action="#">
+                <div class="">
+                    <select>
+                        <option selected disabled>Homme</option>
+                        <option value="1" >Femme</option>               
+                    </select>
+                </div>
+              <div class="input-box">
+                <input type="text" placeholder="Prénom" required>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Nom" required>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Adresse" required>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Ville" required>
+              </div>
+        
+              <div class="input-box">
+                <input type="text" placeholder="Code postal" required>
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Email" required>
+              </div>
+              <div class="input-box">
+                <input type="password" placeholder="Mot de passe" required>
+              </div>
+              <div class="input-box">
+                <input type="password" placeholder="Confirmer le mot de passe" required>
+              </div>
+              <div class="policy">
+                <input type="checkbox">
+                <h3>J'accepte les conditions de ventes</h3>
+              </div>
+              <div class="color">
+                <ul>
+                <li><a href="payer.html"  class="commander">Valider la commande </a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+    </section>
